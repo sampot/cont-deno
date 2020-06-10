@@ -8,6 +8,7 @@ ADD https://github.com/denoland/deno/releases/download/v1.0.5/deno-x86_64-unknow
 WORKDIR /tmp
 RUN unzip /tmp/deno-x86_64-unknown-linux-gnu.zip
 RUN ls -al /tmp
+RUN ldd /tmp/deno
 
 FROM sampot/basebox:18.04-spk1
 
